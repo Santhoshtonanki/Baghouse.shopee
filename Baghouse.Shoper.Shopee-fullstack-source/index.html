@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baghouse.Shoper.Shopee</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="/">👜 <span>Baghouse</span><b>.Shoper</b><strong>.Shopee</strong></a>
+  <form id="searchForm" class="search">
+    <input id="searchInput" placeholder="Search bags, wallets, bottles, accessories...">
+    <button>Search</button>
+  </form>
+  <nav>
+    <button id="loginBtn" class="link-btn">Login</button>
+    <button id="cartBtn" class="cart-btn">🛒 Cart <span id="cartCount">0</span></button>
+  </nav>
+</header>
+
+<nav class="menu">
+  <a href="#categories">Categories</a>
+  <a href="#products">Products</a>
+  <a href="#brands">Brands</a>
+  <a href="#service">Service</a>
+  <button id="ordersBtn">My Orders</button>
+</nav>
+
+<main>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">BRANDED BAGS • TRAVEL • LIFESTYLE</p>
+      <h1>Carry Your World<br>in Style</h1>
+      <p>Shop luggage, backpacks, school bags, wallets, belts and everyday accessories.</p>
+      <a class="primary" href="#products">Shop Now →</a>
+    </div>
+  </section>
+
+  <section id="categories" class="section">
+    <div class="section-title"><h2>Shop by Category</h2></div>
+    <div id="categoryGrid" class="category-grid"></div>
+  </section>
+
+  <section id="brands" class="section">
+    <div class="section-title"><h2>Top Brands</h2></div>
+    <div class="brand-row">
+      <button data-brand="american-tourister">American Tourister</button>
+      <button data-brand="vip">VIP</button>
+      <button data-brand="skybags">Skybags</button>
+      <button data-brand="safari">Safari</button>
+      <button data-brand="wildcraft">Wildcraft</button>
+      <button data-brand="samsonite">Samsonite</button>
+    </div>
+  </section>
+
+  <section id="products" class="section">
+    <div class="section-title">
+      <h2>Featured Products</h2>
+      <button id="clearFilters" class="secondary">Clear filters</button>
+    </div>
+    <div id="productsGrid" class="products-grid"></div>
+  </section>
+
+  <section id="service" class="service">
+    <div>
+      <p class="eyebrow">AFTER-SALES SUPPORT</p>
+      <h2>Product Service & Repair</h2>
+      <p>Warranty claims, repairs and service tracking for your products.</p>
+      <button id="serviceBtn" class="primary">Raise Service Request</button>
+    </div>
+  </section>
+</main>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-card">
+    <button id="closeModal" class="close">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="logo">👜 <span>Baghouse</span><b>.Shoper</b><strong>.Shopee</strong></div>
+  <p>© 2026 Baghouse.Shoper.Shopee. All rights reserved.</p>
+</footer>
+
+<script src="/app.js"></script>
+</body>
+</html>
